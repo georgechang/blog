@@ -1,0 +1,38 @@
+baseURL = "https://georgechang.io/"
+languageCode = "en-us"
+title = "georgechang.io"
+theme = "harbor"
+summarylength = 10
+enableEmoji = true
+# Enable for syntax highlighting
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+[params]
+googleAnalytics = "UA-123-45"
+customCss = "css/gc.css"
+mainSections = ["post"]
+
+[[params.nav]]
+name = "Uses"
+identifier = "uses"
+icon = "fas fa-toolbox fa-lg"
+url = "/uses/"
+
+[[params.nav]]
+name = "Twitter"
+identifier = "twitter"
+icon = "fab fa-twitter fa-lg"
+url = "https://twitter.com/georgechang/"
+
+[[params.nav]]
+name = "LinkedIn"
+identifier = "linkedin"
+icon = "fab fa-linkedin fa-lg"
+url = "https://www.linkedin.com/in/georgechang/"
+
+[[params.nav]]
+name = "GitHub"
+identifier = "github"
+icon = "fab fa-github fa-lg"
+url = "https://github.com/georgechang"
