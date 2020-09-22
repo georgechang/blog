@@ -1,8 +1,8 @@
 ---
-title: Looking at the Data Mapping Process with Sitecore Data Exchange Framework
+title: Investigating the Data Mapping Process with Sitecore Data Exchange Framework
 date: 2020-02-16
-categories: 
-- Sitecore
+categories:
+  - Sitecore
 
 mermaid: true
 ---
@@ -11,7 +11,6 @@ The [Sitecore Data Exchange Framework](https://doc.sitecore.com/developers/def/4
 
 When mapping fields, there is a certain process that a field goes through:
 
-{{<center>}}
 {{<mermaid>}}
 graph TB
 source[Source Data Value]
@@ -23,7 +22,6 @@ transformer --> target-accessor[Target Value Accessor]
 end
 target-accessor --> target[Target Data Value]
 {{</mermaid>}}
-{{</center>}}
 
 As you can see, there are several opportunities for you to be able to transform the data values through the mapping process. If you're writing a custom provider, one important thing is to recognize all the various data types that is going to flow through this process. For example, if my source data value is a date string (MM/dd/yyyy) and my target data value is another date string in a different format (yyyy-MM-dd), where does the parsing of the source date string happen into a `DateTime` object and where does the `ToString()` formatting happen to be written to the target date string? Does it even need to be converted into a C# object at all during the process? Or does the string just require some manipulation? These are considerations that will need to be taken when determining how to model your data transformation processes.
 
@@ -31,7 +29,6 @@ While this is the process that DEF provides you, since DEF is so extensible you 
 
 #### Sitecore as Source Data
 
-{{<center>}}
 {{<mermaid>}}
 graph TB
 source[Sitecore Item]
@@ -46,11 +43,9 @@ transformer --> target-accessor[Target Value Accessor Writer]
 end
 target-accessor --> target[Target Data Value]
 {{</mermaid>}}
-{{</center>}}
 
 #### Sitecore as Target Data
 
-{{<center>}}
 {{<mermaid>}}
 graph TB
 source[Source Data Value]
@@ -65,7 +60,6 @@ end
 end
 field-transformer-write --> target[Sitecore Item]
 {{</mermaid>}}
-{{</center>}}
 
 These extra fields provide more extension points to transform data in the pipeline that are directly associated with the [value accessors](https://doc.sitecore.com/developers/def/40/data-exchange-framework/en/value-accessor.html). Custom value accessors can take advantage of this as well - the converter will need to read in a `Droptree` field on the template and pass the corresponding `IValueReader` as a property upon instantiation of the reader or as a constructor parameter. A quick definitely-not-production-ready-code example of what this looks like:
 

@@ -1,0 +1,15 @@
+@import "variables";
+
+.content {
+  max-width: unset;
+
+  @media only screen and (min-width: $screen-large) {
+    margin-left: 32em;
+  }
+}
+
+@media only screen and (min-width: $screen-large) {
+  .sidebar {
+    width: 28em;
+  }
+}

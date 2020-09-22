@@ -1,17 +1,24 @@
 baseURL = "https://georgechang.io/"
 languageCode = "en-us"
-title = "georgechang.io"
-theme = "harbor"
+title = "George Chang"
+theme = "hyde"
 summarylength = 10
 enableEmoji = true
 # Enable for syntax highlighting
 pygmentsUseClasses = true
 pygmentsCodefences = true
 
+[Menus]
+  main = [
+    { Name = "Twitter", URL = "https://twitter.com/georgechang" },
+    { Name = "GitHub", URL = "https://github.com/georgechang/" },
+    { Name = "LinkedIn", URL = "https://www.linkedin.com/in/georgechang/" }
+  ]
+
 [params]
+description = "Code! Cloud! Containers!"
+themeColor = "theme-base-gc"
 googleAnalytics = "UA-123-45"
-customCss = "css/gc.css"
-mainSections = ["post"]
 
 [[params.nav]]
 name = "Uses"

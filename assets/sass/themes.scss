@@ -1,0 +1,12 @@
+@import "variables";
+
+.theme-base-gc {
+  .sidebar {
+    background-color: $theme;
+  }
+
+  .content a,
+  .related-posts li a:hover {
+    color: $theme;
+  }
+}
