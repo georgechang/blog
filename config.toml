@@ -1,45 +1,51 @@
 baseURL = "https://georgechang.io/"
 languageCode = "en-us"
 title = "George Chang"
-theme = "hyde"
+theme = "gc"
 summarylength = 10
 enableEmoji = true
 # Enable for syntax highlighting
 pygmentsUseClasses = true
 pygmentsCodefences = true
 
-[Menus]
-  main = [
-    { Name = "Twitter", URL = "https://twitter.com/georgechang" },
-    { Name = "GitHub", URL = "https://github.com/georgechang/" },
-    { Name = "LinkedIn", URL = "https://www.linkedin.com/in/georgechang/" }
-  ]
+googleAnalytics = ""
 
-[params]
-description = "Code! Cloud! Containers!"
-themeColor = "theme-base-gc"
-googleAnalytics = "UA-123-45"
+[author]
+  givenName = "George"
+  familyName = "Chang"
+  displayName = "George Chang"
 
-[[params.nav]]
-name = "Uses"
-identifier = "uses"
-icon = "fas fa-toolbox fa-lg"
-url = "/uses/"
+[permalinks]
+  posts = "/:year/:title"
 
-[[params.nav]]
-name = "Twitter"
-identifier = "twitter"
-icon = "fab fa-twitter fa-lg"
-url = "https://twitter.com/georgechang/"
+[menu]
+  [[ menu.main ]]
+  identifier = "about"
+  name = "About"
+  url = "/about"
+  
+  [[ menu.main ]]
+  identifier = "uses"
+  name = "Gear"
+  url = "/uses"
 
-[[params.nav]]
-name = "LinkedIn"
-identifier = "linkedin"
-icon = "fab fa-linkedin fa-lg"
-url = "https://www.linkedin.com/in/georgechang/"
+  [[ menu.social ]]
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class='fa fa-twitter'></i>"
+  url = "https://twitter.com/georgechang"
+  weight = 100
 
-[[params.nav]]
-name = "GitHub"
-identifier = "github"
-icon = "fab fa-github fa-lg"
-url = "https://github.com/georgechang"
+  [[ menu.social ]]
+  identifier = "linkedin"
+  name = "LinkedIn"
+  pre = "<i class='fa fa-linkedin'></i>"
+  url = "https://www.linkedin.com/in/georgechang/"
+  weight = 200
+  
+  [[ menu.social ]]
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class='fa fa-github'></i>"
+  url = "https://github.com/georgechang/"
+  weight = 300

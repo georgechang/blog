@@ -1,9 +1,9 @@
 ---
 title: "Using PKCS #12 (.pfx) Certificates with Solr"
 date: 2018-08-20
-categories: 
-- Sitecore
-- Solr
+categories:
+  - Sitecore
+  - Solr
 ---
 
 Apache Solr is based on the Java technology stack which comes with its own methods for handling certificates, specifically with the JKS (Java Key Store) file type which holds encrypted certificates for use with Java-based applications. You might be vaguely familiar with the JKS file as the installation guide for 9.0+ provided by Sitecore sends you to the following page on the Solr website to enable SSL:

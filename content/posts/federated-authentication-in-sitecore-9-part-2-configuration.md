@@ -1,9 +1,9 @@
 ---
 title: "Federated Authentication in Sitecore 9 - Part 2: Configuration"
 date: 2018-01-30
-categories: 
-- Sitecore
-- authentication
+categories:
+  - Sitecore
+  - Authentication
 ---
 
 Let's take a look at the configuration for federated authentication in Sitecore 9.

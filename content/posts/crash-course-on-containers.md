@@ -1,10 +1,10 @@
 ---
 title: A Crash Course on Containers
 date: 2019-09-25
+categories:
+  - Sitecore
+  - Containers
 draft: true
-categories: 
-- Sitecore
-- Containers
 ---
 
 One of the cool new things out in the tech world right now is containerization - but what exactly is it and what do I do with it?

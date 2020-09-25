@@ -2,8 +2,8 @@
 title: "Vue.js Components in Sitecore Experience Editor"
 date: 2018-08-27
 draft: true
-categories: 
-- Sitecore
+categories:
+  - Sitecore
 ---
 
 One of the hot JavaScript frameworks these days is Vue.js and it has started to regularly find its way into modern web and Sitecore development. We're always looking to keep our customers modernized in terms of technology and have embraced Vue.js in a number of our Sitecore implementations.

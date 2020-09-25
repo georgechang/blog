@@ -1,0 +1,19 @@
+<!-- Enable responsiveness on mobile devices-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+{{ if .IsHome -}}
+<title>{{ .Site.Title }}</title>
+{{- else -}}
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+{{- end }}
+<meta name="description"
+	content="{{ if .IsHome }}{{ $.Site.Params.description }}{{ else }}{{ .Description }}{{ end }}" />
+
+{{ if .IsPage -}}
+{{ partial "json-ld.html" . }}
+{{- end }}
+
+<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+{{ $style := resources.Get "sass/gc/main.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+<script src="https://kit.fontawesome.com/49edb05e8f.js" crossorigin="anonymous"></script>

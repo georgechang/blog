@@ -1,0 +1,11 @@
+{{ define "main" -}}
+<article class="post">
+	<header>
+		<h1 itemprop="headline">{{ .Title }}</h1>
+	</header>
+	<time itemprop="datePublished" datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }}>
+		{{ .Date.Format "Monday, Jan 2, 2006" }}
+	</time>
+	{{ .Content }}
+</article>
+{{- end }}

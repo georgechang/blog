@@ -1,9 +1,9 @@
 ---
 title: Sitecore, URL Rewirites, and the "Failed" JS Dialog
 date: 2016-05-02
-categories: 
-- Sitecore
-- JavaScript
+categories:
+  - Sitecore
+  - JavaScript
 ---
 
 Recently for our new public website, we encountered a bit of an issue with the Sitecore back-end that didn't really have a descriptive error. In fact, there were a number of symptoms that were a bit unexplained but the most frequently encountered one was this "Failed" JavaScript dialog that would come up when expanding something in a tree view in the Content Editor:
@@ -28,9 +28,9 @@ It turns out, the Sitecore back-end doesn't like 301 redirects much - specifical
 
 So how do we fix this? Well, for starters, your [/sitecore URLs shouldn't be accessible on your content delivery servers](https://doc.sitecore.net/sitecore_experience_platform/setting_up__maintaining/security_hardening/configuring/deny_anonymous_users_access_to_a_folder) to begin with, so making sure that's correct will get you started off. If you have a shared CM/CD environment that you're testing on or working locally, you'll want to add an exclusion filter for a few key Sitecore-related URLs:
 
-* Anything under `/sitecore`
-* Anything with the query string `sc_mode` or `sc_debug`
-* Anything under `/-/speak`
+- Anything under `/sitecore`
+- Anything with the query string `sc_mode` or `sc_debug`
+- Anything under `/-/speak`
 
 So what happens is you wind up with a rule in your web.config looking like this:
 

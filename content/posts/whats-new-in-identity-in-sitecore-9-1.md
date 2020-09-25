@@ -1,9 +1,9 @@
 ---
 title: What's New in Identity in Sitecore 9.1
 date: 2019-01-28
-categories: 
-- Sitecore
-- authentication
+categories:
+  - Sitecore
+  - Authentication
 ---
 
 ## Overview

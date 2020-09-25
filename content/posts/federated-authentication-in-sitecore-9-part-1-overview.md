@@ -1,9 +1,9 @@
 ---
 title: "Federated Authentication in Sitecore 9 - Part 1: Overview"
 date: 2018-01-23
-categories: 
-- Sitecore
-- authentication
+categories:
+  - Sitecore
+  - Authentication
 ---
 
 Sitecore 9.0 introduced a new and very useful feature to easily add federated authentication to the platform. Authentication has been and still is being performed using the ASP.NET Membership functionality for standard Sitecore users, however, Sitecore has implemented the ability to use the new ASP.NET Identity functionality that is based OWIN-middleware.

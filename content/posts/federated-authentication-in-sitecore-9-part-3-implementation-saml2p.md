@@ -1,9 +1,9 @@
 ---
 title: "Federated Authentication in Sitecore 9 - Part 3: Implementation of SAML2p"
 date: 2018-06-06
-categories: 
-- Sitecore
-- authentication
+categories:
+  - Sitecore
+  - Authentication
 ---
 
 Let's jump into implementing the code for federated authentication in Sitecore!

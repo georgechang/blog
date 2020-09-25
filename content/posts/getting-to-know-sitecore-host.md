@@ -1,8 +1,8 @@
 ---
 title: Getting to know Sitecore Host
 date: 2019-01-10
-categories: 
-- Sitecore
+categories:
+  - Sitecore
 ---
 
 One of the more interesting announcements made at Sitecore Symposium 2018 is the introduction of Sitecore Host in Sitecore 9.1. There were a couple of sessions devoted to the future of Sitecore and its focus on .NET Core, however, not a lot of details were given at the time. Now with the general availability of Sitecore 9.1, we're able to dig deeper into what exactly is Sitecore Host and what it means for the future of Sitecore.

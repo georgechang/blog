@@ -1,9 +1,9 @@
 ---
 title: Modular JavaScript in Sitecore Renderings with RequireJS
 date: "2015-09-21"
-categories: 
-- Sitecore
-- JavaScript
+categories:
+  - Sitecore
+  - JavaScript
 ---
 
 You may have found yourself in one of more of the following situations in using JavaScript in your Sitecore renderings:
@@ -23,7 +23,7 @@ Recently, I’ve been using [RequireJS](http://www.requirejs.org/) as a great wa
 <script type="text/javascript" src="~/Scripts/moment.js"></script>
 
 <script type="text/javascript">
-  $(document).ready(function() {
+  $(document).ready(function () {
     $("#text").text(moment().calendar());
     console.log("rendering stuff");
   });
@@ -40,7 +40,7 @@ Enter [RequireJS](http://www.requirejs.org/). RequireJS is a JavaScript file and
 <div id="text"></div>
 
 <script type="text/javascript">
-  require(["rendering"], function(rendering) {
+  require(["rendering"], function (rendering) {
     rendering.doStuff("#text");
   });
 </script>
@@ -49,12 +49,12 @@ Enter [RequireJS](http://www.requirejs.org/). RequireJS is a JavaScript file and
 You’ll notice that there’s no reference to jQuery or moment.js. We’ve actually put all of the JavaScript for this rendering in a separate JS file that looks like this:
 
 ```javascript
-define(["jquery", "moment", "domReady!"], function($, moment, doc) {
+define(["jquery", "moment", "domReady!"], function ($, moment, doc) {
   return {
-    doStuff: function(selector) {
+    doStuff: function (selector) {
       $(selector).text(moment().calendar());
       console.log("rendering stuff");
-    }
+    },
   };
 });
 ```
@@ -64,7 +64,7 @@ This is an AMD module that we’ve defined and is loaded when the `require()` ca
 We can also use RequireJS to ensure that jQuery is running in noConflict mode as to not break Page/Experience Editor. I’ve created a module called noConflict.js that looks like the following:
 
 ```javascript
-define(["jquery"], function() {
+define(["jquery"], function () {
   jQuery = $.noConflict(true);
   return jQuery;
 });
@@ -76,12 +76,12 @@ This in conjunction with the following `require.config()` will always ensure tha
 require.config({
   map: {
     "*": {
-      jquery: "noconflict"
+      jquery: "noconflict",
     },
     noconflict: {
-      jquery: "jquery"
-    }
-  }
+      jquery: "jquery",
+    },
+  },
 });
 ```
 

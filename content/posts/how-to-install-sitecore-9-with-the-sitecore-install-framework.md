@@ -1,8 +1,8 @@
 ---
 title: How to Install Sitecore 9 with the Sitecore Install Framework
 date: 2017-10-23
-categories: 
-- Sitecore
+categories:
+  - Sitecore
 ---
 
 The big news coming out of Sitecore Symposium last week is the release of Sitecore Experience Cloud 9.0. With the release of version 9, Sitecore has brought more and more pieces of its platform into an inevitably microservices-oriented future. The first thing you'll notice is that there's no `.exe` installer anymore - this has regularly a quick way to install Sitecore but with the new dependencies on SSL for xConnect and the various options for configuring xDB and databases, Sitecore has abandoned the .exe installer and replaced it with something much better and much more configurable called the Sitecore Install Framework.
@@ -11,19 +11,19 @@ The Sitecore Install Framework (commonly referred to as SIF since every Sitecore
 
 For this blog post, however, we'll focus on the most basic (and likely most common) install scenario - the all-in-one development installation. This is where all of the Sitecore and xConnect roles are all on a single machine that is also likely hosting SQL Server and Solr as well. For this, we'll need the Sitecore Install Framework to run the following tasks:
 
-* Install client certificates for xConnect
-* Install xConnect
-  * Install Solr cores for xDB
-  * Deploy the xConnect web deploy package
-    * Create and deploy the web application
-    * Deploy the databases
-    * Create the Windows services for marketing automation and search indexing
-* Install Sitecore
-  * Install Solr cores for Sitecore
-  * Deploy the Sitecore web deploy package
-    * Create and deploy the web application
-    * Deploy the databases
-    * Associate the Sitecore instance with the deployed xConnect instance
+- Install client certificates for xConnect
+- Install xConnect
+  - Install Solr cores for xDB
+  - Deploy the xConnect web deploy package
+    - Create and deploy the web application
+    - Deploy the databases
+    - Create the Windows services for marketing automation and search indexing
+- Install Sitecore
+  - Install Solr cores for Sitecore
+  - Deploy the Sitecore web deploy package
+    - Create and deploy the web application
+    - Deploy the databases
+    - Associate the Sitecore instance with the deployed xConnect instance
 
 Fortunately, Sitecore provides all of these steps for you - all you need to do is to execute them with the proper parameters. In the Sitecore 9 Installation Guide, Sitecore walks you through the various services and how to install each one. The modules can be obtained from the Sitecore download site or more preferably from the Sitecore MyGet repository. To install the modules, run the following PowerShell commands:
 
@@ -55,9 +55,9 @@ $SolrRoot = "C:solr-6.6.2"
 $SolrService = "solr662"
 $SqlServer = "localhost"
 $SqlAdminUser = "sc90"
-$SqlAdminPassword = "password" 
- 
-#install client certificate for xconnect 
+$SqlAdminPassword = "password"
+
+#install client certificate for xconnect
 $certParams =
 @{
   Path = "$PSScriptRootxconnect-createcert.json"
@@ -70,22 +70,22 @@ $solrParams =
 @{
   Path = "$PSScriptRootxconnect-solr.json"
   SolrUrl = $SolrUrl
-  SolrRoot = $SolrRoot  
-  SolrService = $SolrService  
+  SolrRoot = $SolrRoot
+  SolrService = $SolrService
   CorePrefix = $prefix
 }
 Install-SitecoreConfiguration @solrParams -Verbose
 
-#deploy xconnect instance 
-$xconnectParams = 
+#deploy xconnect instance
+$xconnectParams =
 @{
   Path = "$PSScriptRootxconnect-xp0.json"
   Package = "$PSScriptRootSitecore 9.0.0 rev. 171002 (OnPrem)_xp0xconnect.scwdp.zip"
   LicenseFile = "$PSScriptRootlicense.xml"
   Sitename = $XConnectCollectionService
   XConnectCert = $certParams.CertificateName
-  SqlDbPrefix = $prefix  
-  SqlServer = $SqlServer  
+  SqlDbPrefix = $prefix
+  SqlServer = $SqlServer
   SqlAdminUser = $SqlAdminUser
   SqlAdminPassword = $SqlAdminPassword
   SolrCorePrefix = $prefix
@@ -110,11 +110,11 @@ $sitecoreParams =
   Path = "$PSScriptRootsitecore-XP0.json"
   Package = "$PSScriptRootSitecore 9.0.0 rev. 171002 (OnPrem)_single.scwdp.zip"
   LicenseFile = "$PSScriptRootlicense.xml"
-  SqlDbPrefix = $prefix  
-  SqlServer = $SqlServer  
+  SqlDbPrefix = $prefix
+  SqlServer = $SqlServer
   SqlAdminUser = $SqlAdminUser
   SqlAdminPassword = $SqlAdminPassword
-  SolrCorePrefix = $prefix  
+  SolrCorePrefix = $prefix
   SolrUrl = $SolrUrl
   XConnectCert = $certParams.CertificateName
   Sitename = $sitecoreSiteName

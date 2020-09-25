@@ -1,11 +1,10 @@
 ---
 title: Active Directory with Sitecore Identity
 date: 2019-06-23
-description: The definitive guide to using on-premises Active Directory with Sitecore Identity
+categories:
+  - Sitecore
+  - authentication
 draft: true
-category: 
-- Sitecore
-- authentication
 ---
 
 With the release of Sitecore 9.1 and the introduction of Sitecore Identity, the legacy Sitecore Active Directory module is no longer supported for authentication to the administration portal. This becomes a barrier of entry to upgrading to 9.1 and beyond as customers who rely on an on-premises instance of Active Directory (a.k.a. Active Directory Domain Services a.k.a. AD DS) will need to figure out a replacement for the deprecated module.

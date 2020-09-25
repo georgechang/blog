@@ -1,9 +1,9 @@
 ---
 title: Sitecore 8.2u1 Azure Resource Manager Templates
 date: 2016-12-13
-categories: 
-- Sitecore
-- Azure
+categories:
+  - Sitecore
+  - Azure
 ---
 
 The Sitecore and Microsoft worlds have been abuzz lately with the latest iteration of Sitecore's Experience Platform product - version 8.2 Update 1. The big feature update with Update 1 is full support for [Azure Resource Manager](https://azure.microsoft.com/en-us/features/resource-manager/) support for the Sitecore platform. Deploying Sitecore on Azure has actually been available since version 6.3 with the Sitecore Azure module. However, the Sitecore Azure module was largely dependent on the old Azure Cloud Services and Azure Storage and was not widely adopted due to technical and administrative challenges.
@@ -33,4 +33,3 @@ This is a production-ready deployment of the Sitecore Experience Management prod
 There are a few caveats with these ARM templates that we'll talk about in a future blog post. Regardless, this is a huge step forward for Sitecore and Azure!
 
 For more information regarding Sitecore 8.2u1 on Azure, check out the Sitecore documentation site here: https://doc.sitecore.net/cloud/working_with_sitecore_azure/sitecore_azure_overview
-

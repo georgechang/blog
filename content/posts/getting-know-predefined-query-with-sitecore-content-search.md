@@ -1,8 +1,8 @@
 ---
 title: Getting to Know PredefinedQuery with Sitecore Content Search
 date: 2017-09-06
-categories: 
-- Sitecore
+categories:
+  - Sitecore
 ---
 
 Recently I've been working a lot with the Sitecore Content Search API and found myself writing a lot of code like this:
@@ -29,7 +29,7 @@ public class Thing
 {
   [IndexField("_template")]
   public Guid TemplateId {get; set; }
-  
+
   [IndexField("isSearchable_b")]
   public bool IsSearchable {get; set;}
 }
@@ -45,19 +45,19 @@ The first parameter is the string value of the name of the property on the class
 
 The second parameter defines the comparison type according to an enum. The available values are below:
 
-* `Equal`
-* `LessThan`
-* `LessThanOrEqual`
-* `GreaterThan`
-* `GreaterThanOrEqual`
-* `OrderBy`
-* `Like`
-* `NotEqual`
-* `Contains`
-* `StartsWith`
-* `EndsWith`
-* `Matches`
-* `MatchWildcard`
+- `Equal`
+- `LessThan`
+- `LessThanOrEqual`
+- `GreaterThan`
+- `GreaterThanOrEqual`
+- `OrderBy`
+- `Like`
+- `NotEqual`
+- `Contains`
+- `StartsWith`
+- `EndsWith`
+- `Matches`
+- `MatchWildcard`
 
 There is also an optional 4th parameter that you can use to specify the type of the value (the 3rd parameter). In my example I had a property in a Constants class that is a string but I can let the query know that the string should be parsed into a Guid.
 
@@ -70,7 +70,7 @@ public class Thing
 {
   [IndexField("_template")]
   public Guid TemplateId {get; set; }
-  
+
   [IndexField("isSearchable_b")]
   public bool IsSearchable {get; set;}
 }

@@ -1,0 +1,23 @@
+ul {
+  display: flex;
+
+  li {
+    list-style-type: none;
+  }
+
+  &.social {
+    li {
+      margin: 10px;
+
+      .fa {
+        font-size: 1.42rem;
+      }
+    }
+  }
+}
+
+nav {
+  ul {
+    flex-direction: column;
+  }
+}

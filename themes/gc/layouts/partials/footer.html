@@ -1,0 +1,13 @@
+<footer>
+	<small>&copy; {{ now.Format "2006" }} George Chang</small>
+
+	<nav>
+		<ul>
+			{{ range .Site.Menus.social }}
+			<li>
+				<a href="{{ .URL }}" title="{{ .Title }}">{{ .Pre }}</a>
+			</li>
+			{{ end }}
+		</ul>
+	</nav>
+</footer>

@@ -1,8 +1,8 @@
 ---
 title: Certificate Authentication with Solr
 date: 2018-08-01
-categories: 
-- Solr
+categories:
+  - Solr
 ---
 
 Securing your Solr instance is an important part of the Sitecore security hardening process. In many on-premises environments, the Solr servers are behind the firewall without the need to be publicly accessible - just accessible by the Sitecore application itself. However, with cloud-based hosting such as Azure App Services, this becomes more difficult as the Solr implementation will need to be accessible by the App Service over the internet. This means we have to secure our Solr instances! We can use basic username/password authentication, but where's the fun in that? Let's authenticate with client certificates!
