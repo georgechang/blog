@@ -13,7 +13,7 @@
 {{ partial "json-ld.html" . }}
 {{- end }}
 
-<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
-{{ $style := resources.Get "sass/gc/main.scss" | toCSS | minify | fingerprint }}
+{{ $css := resources.Get "css/gc.css" }}
+{{ $style := $css | resources.PostCSS }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
 <script src="https://kit.fontawesome.com/49edb05e8f.js" crossorigin="anonymous"></script>
