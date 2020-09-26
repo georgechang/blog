@@ -1,5 +1,6 @@
 ---
 title: "Using PKCS #12 (.pfx) Certificates with Solr"
+slug: "using-pkcs12-pfx-certificates-with-solr"
 date: 2018-08-20
 categories:
   - Sitecore
