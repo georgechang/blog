@@ -5,7 +5,11 @@
   "dependencies": {
     "tailwindcss": "^1.8.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "postcss-cli": "^8.0.0",
+    "postcss": "^8.0.9",
+    "autoprefixer": "^10.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
