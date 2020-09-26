@@ -2,9 +2,7 @@
   "name": "gc",
   "version": "1.0.0",
   "description": "",
-  "dependencies": {
-    "tailwindcss": "^1.8.10"
-  },
+  "dependencies": {},
   "devDependencies": {
     "postcss-cli": "^8.0.0",
     "postcss": "^8.0.9",
