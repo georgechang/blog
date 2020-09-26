@@ -1,6 +1,0 @@
-[submodule "themes/harbor"]
-	path = themes/harbor
-	url = git@github.com:georgechang/harbor.git
-[submodule "themes/hyde"]
-	path = themes/hyde
-	url = git@github.com:georgechang/hyde.git
