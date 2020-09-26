@@ -44,7 +44,7 @@
     height: unset;
   }
 
-  .highlight {
+  .prose pre {
     @apply mb-8;
     max-width: calc(100vw - 2rem);
   }
