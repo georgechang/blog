@@ -1,5 +1,6 @@
 ---
 title: "Using PKCS #12 (.pfx) Certificates with Solr"
+slug: "using-pkcs12-pfx-certificates-with-solr"
 date: 2018-08-20
 categories:
   - Sitecore
@@ -66,5 +67,6 @@ $pfxPath = "C:\solr-6.6.2\server\etc\cert.pfx"
 # the secret to assign your exported .pfx file
 $pfxPassword = ConvertTo-SecureString -String "secret" -Force -AsPlainText
 
-New-SelfSignedCertificate -DnsName $domainName -CertStoreLocation cert:\LocalMachine\My | % { Move-Item -Path Cert:\LocalMachine\My\$($_.Thumbprint) -Destination Cert:\LocalMachine\Root; Export-PfxCertificate -Cert $_ -FilePath $pfxPath -Password $pfxPassword }
+New-SelfSignedCertificate -DnsName $domainName -CertStoreLocation "cert:\LocalMachine\My" | % { Move-Item -Path "Cert:\LocalMachine\My\$($_.Thumbprint)" -Destination "Cert:\LocalMachine\Root"
+Export-PfxCertificate -Cert $_ -FilePath $pfxPath -Password $pfxPassword }
 ```

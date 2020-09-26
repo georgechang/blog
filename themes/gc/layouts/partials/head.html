@@ -16,4 +16,6 @@
 {{ $css := resources.Get "css/gc.css" }}
 {{ $style := $css | resources.PostCSS }}
 <link rel="stylesheet" href="{{ $style.Permalink }}">
+{{ $syntax := resources.Get "css/syntax.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $syntax.Permalink }}">
 <script src="https://kit.fontawesome.com/49edb05e8f.js" crossorigin="anonymous"></script>

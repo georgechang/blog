@@ -22,6 +22,30 @@
   hr {
     @apply mt-4 mb-8;
   }
+
+  code {
+    @apply whitespace-pre-line;
+  }
+
+  a {
+    @apply text-blue-900;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  article li {
+    @apply ml-8 list-disc;
+  }
+
+  article h2 {
+    @apply my-4;
+  }
+
+  article h3 {
+    @apply my-4;
+  }
 }
 
 @layer components {
