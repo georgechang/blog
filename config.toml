@@ -1,6 +1,6 @@
 baseURL = "https://georgechang.io/"
 languageCode = "en-us"
-title = "George Chang"
+title = "georgechang.io"
 theme = "gc"
 summarylength = 10
 enableEmoji = true
@@ -16,18 +16,9 @@ googleAnalytics = ""
   displayName = "George Chang"
 
 [permalinks]
-  posts = "/:year/:title"
+  posts = "/posts/:year/:title"
 
 [menu]
-  [[ menu.main ]]
-  identifier = "about"
-  name = "About"
-  url = "/about"
-  
-  [[ menu.main ]]
-  identifier = "uses"
-  name = "Gear"
-  url = "/uses"
 
   [[ menu.social ]]
   identifier = "twitter"

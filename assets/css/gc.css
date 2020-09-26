@@ -14,4 +14,34 @@
   h3 {
     @apply text-xl;
   }
+
+  p {
+    @apply mb-4 w-auto;
+  }
+
+  hr {
+    @apply mt-4 mb-8;
+  }
+}
+
+@layer components {
+  .highlight {
+    @apply mb-8;
+  }
+
+  ul.pagination {
+    @apply flex flex-row my-8;
+  }
+
+  li.page-item {
+    @apply mx-4 text-xl;
+  }
+
+  li.page-item.active {
+    @apply font-bold;
+  }
+
+  li.page-item.disabled {
+    @apply text-gray-400;
+  }
 }

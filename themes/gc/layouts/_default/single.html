@@ -1,11 +1,16 @@
 {{ define "main" -}}
-<article class="post">
-	<header>
-		<h1 itemprop="headline">{{ .Title }}</h1>
-	</header>
-	<time itemprop="datePublished" datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }}>
-		{{ .Date.Format "Monday, Jan 2, 2006" }}
-	</time>
-	{{ .Content }}
-</article>
+<section class="flex flex-col items-center">
+	<article class="flex flex-col items-center w-1/2">
+		<header>
+			<h1 itemprop="headline" class="text-4xl font-semibold">{{ .Title }}</h1>
+		</header>
+		<time itemprop="datePublished" datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }}
+			class="text-lg italic mb-16">
+			{{ .Date.Format "Monday, January 2, 2006" }}
+		</time>
+		<section class="flex flex-col mb-16">
+			{{ .Content }}
+		</section>
+	</article>
+</section>
 {{- end }}

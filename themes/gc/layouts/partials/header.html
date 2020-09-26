@@ -15,7 +15,7 @@
 	<ul class="flex flex-row space-x-6">
 		{{ range .Site.Menus.social }}
 		<li>
-			<a href="{{ .URL }}" title="{{ .Title }}" class="text-3xl">{{ .Pre }}</a>
+			<a href="{{ .URL }}" title="{{ .Title }}" class="text-3xl" target="_blank" rel="noopener noreferrer">{{ .Pre }}</a>
 		</li>
 		{{ end }}
 	</ul>
