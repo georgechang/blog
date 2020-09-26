@@ -1,21 +1,21 @@
-<header class="flex flex-row justify-between bg-gradient-to-b from-white py-4 px-12 sticky top-0">
+<header class="flex flex-row justify-between bg-gradient-to-b from-white py-4 lg:px-12 px-4 lg:sticky top-0">
 	<nav class="flex flex-row items-center">
 		<a href="{{ .Site.Home.Permalink }}" title="Home" class="mr-18">
-			<h1>George Chang</h1>
+			<h1 class="whitespace-no-wrap">George Chang</h1>
 		</a>
-		<ul class="flex flex-row mx-12">
+		<!-- <ul class="flex flex-row mx-12">
 			{{ range .Site.Menus.main }}
 			<li class="mx-4">
 				<a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
 			</li>
 			{{ end }}
-		</ul>
+		</ul> -->
 	</nav>
 
-	<ul class="flex flex-row space-x-6">
+	<ul class="social space-x-6">
 		{{ range .Site.Menus.social }}
 		<li>
-			<a href="{{ .URL }}" title="{{ .Title }}" class="text-3xl" target="_blank" rel="noopener noreferrer">{{ .Pre }}</a>
+			<a href="{{ .URL }}" title="{{ .Title }}" target="_blank" rel="noopener noreferrer">{{ .Pre }}</a>
 		</li>
 		{{ end }}
 	</ul>

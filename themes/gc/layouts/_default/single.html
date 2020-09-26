@@ -1,8 +1,8 @@
 {{ define "main" -}}
 <section class="flex flex-col items-center">
-	<article class="flex flex-col items-center w-1/2">
+	<article class="prose mx-8 sm:mx-0 lg:prose-lg ">
 		<header>
-			<h1 itemprop="headline" class="text-4xl font-semibold">{{ .Title }}</h1>
+			<h1 itemprop=" headline" class="text-center">{{ .Title }}</h1>
 		</header>
 		<time itemprop="datePublished" datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }}
 			class="text-lg italic mb-16">
