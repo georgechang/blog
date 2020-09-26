@@ -1,11 +1,11 @@
 {{ define "main" -}}
-<section class="flex flex-col text-center py-24 bg-gray-300">
-	<h2 class="text-5xl">Hey there. I'm George.</h2>
+<section class="flex flex-col text-center px-8 py-16 sm:py-24 bg-gray-300">
+	<h2 class="text-5xl mb-4 leading-snug">Hey there. I'm George.</h2>
 	<p class="text-2xl">I do tech stuff in the cloud, especially with Sitecore.</p>
 </section>
 <section class="flex flex-col items-center">
 	{{ range .Paginator.Pages.ByDate.Reverse -}}
-	<article class="flex flex-col my-8 w-2/3">
+	<article class="flex flex-col my-8 mx-8 sm:w-2/3">
 		<h3 class="font-semibold">
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		</h3>

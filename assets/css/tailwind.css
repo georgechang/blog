@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply mb-4 w-auto;
+  }
+
+  hr {
+    @apply mt-4 mb-8;
+  }
+
+  a {
+    @apply text-blue-900;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+}
+
+@layer components {
+  .mermaid {
+    @apply mb-8;
+    max-width: calc(100vw - 2rem);
+  }
+
+  .mermaid svg {
+    @apply max-w-2xl;
+    width: unset;
+    height: unset;
+  }
+
+  .highlight {
+    @apply mb-8;
+    max-width: calc(100vw - 2rem);
+  }
+
+  ul.social {
+    @apply flex flex-row;
+  }
+
+  ul.social li a {
+    @apply text-3xl;
+  }
+
+  ul.pagination {
+    @apply flex flex-row my-8;
+  }
+
+  li.page-item {
+    @apply mx-4 text-xl;
+  }
+
+  li.page-item.active {
+    @apply font-bold;
+  }
+
+  li.page-item.disabled {
+    @apply text-gray-400;
+  }
+}

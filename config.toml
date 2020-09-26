@@ -4,9 +4,6 @@ title = "georgechang.io"
 theme = "gc"
 summarylength = 10
 enableEmoji = true
-# Enable for syntax highlighting
-pygmentsUseClasses = true
-pygmentsCodefences = true
 
 googleAnalytics = ""
 
@@ -19,7 +16,6 @@ googleAnalytics = ""
   posts = "/posts/:year/:slug"
 
 [menu]
-
   [[ menu.social ]]
   identifier = "twitter"
   name = "Twitter"
@@ -40,3 +36,8 @@ googleAnalytics = ""
   pre = "<i class='fa fa-github'></i>"
   url = "https://github.com/georgechang/"
   weight = 300
+
+[markup]
+  [markup.highlight]
+    tabWidth = 2
+    style = "monokailight"
