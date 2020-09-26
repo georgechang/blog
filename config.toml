@@ -16,7 +16,7 @@ googleAnalytics = ""
   displayName = "George Chang"
 
 [permalinks]
-  posts = "/posts/:year/:title"
+  posts = "/posts/:year/:slug"
 
 [menu]
 
