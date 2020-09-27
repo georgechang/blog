@@ -3,19 +3,19 @@
 	<h2 class="text-5xl mb-4 leading-snug">Hey there. I'm George.</h2>
 	<p class="text-2xl">I do tech stuff in the cloud, especially with Sitecore.</p>
 </section>
-<section class="flex flex-col items-center">
+<section class="flex flex-col items-center mx-8 sm:mx-0">
 	{{ range .Paginator.Pages.ByDate.Reverse -}}
-	<article class="flex flex-col my-8 mx-8 sm:w-2/3">
+	<article class="my-4 sm:max-w-2/3 md:max-w-1/2 w-full">
 		<h3 class="font-semibold">
 			<a href="{{ .Permalink }}">{{ .Title }}</a>
 		</h3>
-		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="text-sm italic">
+		<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="text-sm italic block">
 			{{ .Date.Format "Monday, January 2, 2006" }}
 		</time>
 		{{ .Summary }}
 		{{ if .Truncated }}
-		<div class="hover:underline">
-			<a href="{{ .RelPermalink }}">Read More…</a>
+		<div class="hover:uhover:underline">
+			<a href=" {{ .RelPermalink }}">Read More…</a>
 		</div>
 		{{ end }}
 	</article>

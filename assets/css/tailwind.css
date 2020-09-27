@@ -15,14 +15,6 @@
     @apply text-xl;
   }
 
-  p {
-    @apply mb-4 w-auto;
-  }
-
-  hr {
-    @apply mt-4 mb-8;
-  }
-
   a {
     @apply text-blue-900;
   }
@@ -44,9 +36,18 @@
     height: unset;
   }
 
-  .prose pre {
-    @apply mb-8;
+  article.prose pre {
+    @apply my-0;
     max-width: calc(100vw - 2rem);
+  }
+
+  article.prose ol {
+    @apply my-0;
+  }
+
+  article.prose blockquote p:first-of-type::before,
+  article.prose blockquote p:first-of-type::after {
+    content: "";
   }
 
   ul.social {

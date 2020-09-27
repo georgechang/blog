@@ -1,9 +1,8 @@
 ---
 title: "Sitecore Headless Development with ASP.NET Core: Getting Set Up"
-date: 2020-09-08
+date: 2020-09-30
 categories:
   - Sitecore
-draft: true
 ---
 
 Okay George, you've blabbed a lot in the previous post about what Sitecore headless development is, now how do I get started?
