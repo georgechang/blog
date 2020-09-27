@@ -1,7 +1,6 @@
 baseURL = "https://georgechang.io/"
 languageCode = "en-us"
 title = "georgechang.io"
-theme = "gc"
 summarylength = 10
 enableEmoji = true
 
@@ -43,4 +42,4 @@ googleAnalytics = ""
     style = "native"
 
   [markup.goldmark.renderer]
-    unsafe= true
+    unsafe = true

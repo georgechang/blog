@@ -7,7 +7,7 @@ categories:
 
 Recently someone I worked with was struggling with deploying a folder of files into an Azure App Service. What resulted was an unnecessarily convoluted PowerShell script inline in the YAML file that uploaded each file via the Kudu API.
 
-There's a task called [`AzureRmWebAppDeployment`](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-deployment) that you can plug into your YAML and point it to something for MSDeploy to deploy to the app service. That's right, it's the same exact step you use to deploy anything else to an Azure App Service.
+There's a task called [AzureRmWebAppDeployment](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/deploy/azure-rm-web-app-deployment) that you can plug into your YAML and point it to something for MSDeploy to deploy to the app service. That's right, it's the same exact step you use to deploy anything else to an Azure App Service.
 
 Contrary to popular belief (and apparently there are no articles about this out there), it doesn't _have_ to be a web deploy package or a zip file - you can just point it at a folder of files and it'll deploy files relative to the root of the app service. If you need those files in a certain structure, you'll need to have the folder structure you're deploying to match the folder structure you want to be deployed onto the app service.
 

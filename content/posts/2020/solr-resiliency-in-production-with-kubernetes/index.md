@@ -23,13 +23,13 @@ In modern day Solr, a new application called Zookeeper is introduced. The respon
 
 [image]
 
-tl;dr - SolrCloud = Solr + Zookeeper
+> tl;dr - SolrCloud = Solr + Zookeeper
 
 ## Crash course on Solr in Kubernetes
 
-In Kubernetes, each physical (or virtual) host in the cluster is called a _node_ - a Kubernetes instance consists of a control plane and 1 or more nodes. On each node, you can deploy one or more containers together as a service called a _pod_ - pods are then distributed ("scheduled") on your nodes based on need.
+In Kubernetes, each physical (or virtual) host in the cluster is called a **node** - a Kubernetes instance consists of a control plane and 1 or more nodes. On each node, you can deploy one or more containers together as a service called a **pod** - pods are then distributed ("scheduled") on your nodes based on need.
 
-For a Solr instance, we'll need a Solr _pod_ and a Zookeeper _pod_ that is scheduled across _nodes_. Zookeeper will run and the Solr instances will subscribe to the Zookeeper instances to retrieve configuration.
+For a Solr instance, we'll need a Solr **pod** and a Zookeeper **pod** that is scheduled across **nodes**. Zookeeper will run and the Solr instances will subscribe to the Zookeeper instances to retrieve configuration.
 
 ## Resiliency
 
@@ -37,19 +37,27 @@ So knowing all this, how do we achieve resiliency for Solr? We'll definitely wan
 
 A 3 node Kubernetes cluster for Solr can look something like this:
 
+[image]
+
 It's all looking good! However, what happens when something bad happens? Let's look at the following scenarios:
 
 ### A Solr container dies
 
 Kubernetes handles this - it's one of the things it does well. If a Solr instance a.k.a. container dies for whatever reason, Kubernetes recognizes this and spins up a new one. Since Zookeeper maintains the configuration, the new Solr instance should retrieve configuration from Zookeeper and it's back in business. Kubernetes will load-balance the requests across the pods so there shouldn't be any downtime (unless _all_ the Solr containers die).
 
+[image]
+
 ### A Zookeeper container dies
 
 Similar to the Solr containers, Kubernetes works its magic and tries to spin up a new container. Zookeeper is interesting though - when you scale Zookeeper, it requires a majority of the configured Zookeeper instances to still be up in order to elect a "leader", that is, an instance that is the primary instance. In order to have a majority after a failure, you need to have at least 3 instances (a "quorum") so that if an instance fails, there will still be 2 instances remaining which is a majority. This majority is required for the remaining instance to elect a leader. It's all very political and somewhere in there there's probably some weird electoral collge math going on.
 
+[image]
+
 ### A Kubernetes node dies
 
 This is the fun one. What if an entire Kubernetes node dies? Well, since we've got everything scheduled across all of the nodes, we're just down to 2 instances each of Solr and Zookeeper. Hey look, we're still okay. We've got a Zookeeper majority to elect a new leader and we've got Solr still chugging away. Since all the cores and data are stored in persistent volumes, Solr can pick up and keep going while the affected node is fixed or recreated. Depending on the scheduling rules for the pods, Kubernetes may spin up a replacement instance on one of the existing nodes, bringing it back to 3 before the 3rd node is back.
+
+[image]
 
 ## Wrapping Up
 
