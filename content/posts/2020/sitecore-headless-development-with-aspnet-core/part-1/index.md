@@ -1,6 +1,6 @@
 ---
 title: "Sitecore Headless Development with ASP.NET Core: Overview"
-date: 2020-09-08
+date: 2020-09-28
 categories:
   - Sitecore
 ---

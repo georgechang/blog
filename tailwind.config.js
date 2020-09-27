@@ -8,7 +8,12 @@ module.exports = {
     content: ['./**/layouts/**/*.html'],
   },
   theme: {
-    extend: {},
+    extend: {
+      maxWidth: {
+        '1/2': '50%',
+        '2/3': '66%'
+      }
+    },
   },
   variants: {},
   plugins: [

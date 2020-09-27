@@ -1,6 +1,6 @@
 ---
 title: Modular JavaScript in Sitecore Renderings with RequireJS
-date: "2015-09-21"
+date: 2015-09-21
 categories:
   - Sitecore
   - JavaScript

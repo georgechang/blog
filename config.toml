@@ -40,4 +40,7 @@ googleAnalytics = ""
 [markup]
   [markup.highlight]
     tabWidth = 2
-    style = "monokailight"
+    style = "native"
+
+  [markup.goldmark.renderer]
+    unsafe= true

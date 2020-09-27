@@ -35,19 +35,31 @@ Or if you're obtaining a certificate from a provider, it's just:
 
 The only thing that will be different in the solr.in.cmd configuration is that instead of
 
-`set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.jks`
-`set SOLR_SSL_KEY_STORE_TYPE=JKS`  
-and  
-`set SOLR_SSL_TRUST_STORE_TYPE=JKS`
-`set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.jks`
+```cmd
+set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.jks
+set SOLR_SSL_TRUST_STORE_TYPE=JKS
+```
+
+and
+
+```cmd
+set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.jks
+set SOLR_SSL_TRUST_STORE_TYPE=JKS
+```
 
 you would have
 
-`set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.pfx`
-`set SOLR_SSL_KEY_STORE_TYPE=PKCS12`  
-and  
-`set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.pfx`
-`set SOLR_SSL_TRUST_STORE_TYPE=PKCS12`
+```cmd
+set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.pfx
+set SOLR_SSL_TRUST_STORE_TYPE=PKCS12
+```
+
+and
+
+```cmd
+set SOLR_SSL_KEY_STORE=C:\solr-6.6.2\server\etc\localhost.pfx`
+set SOLR_SSL_TRUST_STORE_TYPE=PKCS12
+```
 
 Easy, right?
 

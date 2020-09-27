@@ -3,13 +3,16 @@ title: Sitecore 10 - Containers with Docker and Kubernetes
 date: 2020-08-25
 categories:
   - Sitecore
+  - Cloud
 ---
 
 [Sitecore 10.0](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100.aspx) made its way into the world a few weeks back and while it wasn't a dramatic user-facing major release, it was a huge release for Sitecore becoming more cloud-native and looking ahead to the future of the Sitecore development experience.
 
 ## Cloud-Native?
 
-You may be asking, what does "cloud-native" mean? Well, for that we can turn to the [Cloud Native Computing Foundation](https://www.cncf.io/) who defines "cloud-native" as the following:
+You may be asking, what does "cloud-native" even mean? Well, for that we can turn to the [Cloud Native Computing Foundation](https://www.cncf.io/) who defines "cloud-native" as the following:
+
+{{% callout bg-gray-200 %}}
 
 _Cloud native technologies empower organizations to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds. Containers, service meshes, microservices, immutable infrastructure, and declarative APIs exemplify this approach._
 
@@ -17,7 +20,9 @@ _These techniques enable loosely coupled systems that are resilient, manageable,
 
 <cite>-- https://github.com/cncf/toc/blob/master/DEFINITION.md</cite>
 
-tl;dr - make your applications scalable
+{{% /callout %}}
+
+> tl;dr - make your applications scalable
 
 ## Sitecore and Containers
 
