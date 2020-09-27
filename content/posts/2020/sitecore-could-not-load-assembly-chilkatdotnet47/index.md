@@ -1,5 +1,6 @@
 ---
 title: Sitecore 9 - Could not load file or assembly 'ChilkatDotNet47.DLL' or one of its dependencies. The specified module could not be found.
+slug: sitecore-could-not-load-file-or-assembly-chilkatdotnet47-dll-or-one-of-its-dependencies
 date: 2020-04-21
 categories:
   - Sitecore
