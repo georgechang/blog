@@ -23,7 +23,7 @@
 {{ partial "json-ld.html" . }}
 {{- end }}
 
-<script src="/js/sw.js"></script>
+<script src="/sw.js"></script>
 
 {{ $css := resources.Get "css/tailwind.css" }}
 {{ $style := $css | resources.PostCSS }}
