@@ -25,7 +25,7 @@
 <script defer src="/sw.js"></script>
 {{ $css := resources.Get "css/tailwind.css" | postCSS | fingerprint }}
 {{ if not .Site.IsServer }}
-{{ $css := $css | minify }}
+{{ $css := resources.Get "css/tailwind.css" | postCSS | minify | fingerprint }}
 {{ end }}
 <link rel="stylesheet" href="{{ $css.Permalink }}">
 {{ if (.Params.mermaid) }}

@@ -6,6 +6,9 @@ module.exports = {
   purge: {
     mode: 'all',
     content: ['./layouts/**/*.html'],
+    options: {
+      whitelist: ['pagination', 'page-item', 'page-link', 'disabled', 'active'],
+    }
   },
   theme: {
     extend: {
