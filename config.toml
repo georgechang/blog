@@ -18,21 +18,21 @@ googleAnalytics = ""
   [[ menu.social ]]
   identifier = "twitter"
   name = "Twitter"
-  pre = "<i class='fa fa-twitter'></i>"
+  pre = "twitter"
   url = "https://twitter.com/georgechang"
   weight = 100
 
   [[ menu.social ]]
   identifier = "linkedin"
   name = "LinkedIn"
-  pre = "<i class='fa fa-linkedin'></i>"
+  pre = "linkedin"
   url = "https://www.linkedin.com/in/georgechang/"
   weight = 200
   
   [[ menu.social ]]
   identifier = "github"
   name = "GitHub"
-  pre = "<i class='fa fa-github'></i>"
+  pre = "github"
   url = "https://github.com/georgechang/"
   weight = 300
 

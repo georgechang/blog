@@ -54,8 +54,8 @@
     @apply flex flex-row;
   }
 
-  ul.social li a {
-    @apply text-3xl;
+  ul.social svg {
+    @apply w-8 fill-current text-gray-700;
   }
 
   ul.pagination {

@@ -24,11 +24,8 @@
 {{- end }}
 
 <script src="/sw.js"></script>
-
-{{ $css := resources.Get "css/tailwind.css" }}
-{{ $style := $css | resources.PostCSS }}
-<link rel="stylesheet" href="{{ $style.Permalink }}">
-<script src="https://kit.fontawesome.com/49edb05e8f.js" crossorigin="anonymous"></script>
+{{ $css := resources.Get "css/tailwind.css" | resources.PostCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink }}">
 {{ if (.Params.mermaid) }}
 <!-- MermaidJS support -->
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>

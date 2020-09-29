@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "tailwindcss": "^1.8.10",
-    "@tailwindcss/typography": "^0.2.0"
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@tailwindcss/typography": "^0.2.0",
+    "tailwindcss": "^1.8.10"
   },
   "devDependencies": {
     "postcss-cli": "^8.0.0",
@@ -15,5 +17,5 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "George Chang",
-  "license": "ISC"
+  "license": "MIT"
 }

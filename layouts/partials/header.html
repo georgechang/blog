@@ -15,7 +15,8 @@
 	<ul class="social space-x-6">
 		{{ range .Site.Menus.social }}
 		<li>
-			<a href="{{ .URL }}" title="{{ .Title }}" target="_blank" rel="noopener noreferrer">{{ .Pre }}</a>
+			<a href="{{ .URL }}" title="{{ .Title }}" target="_blank"
+				rel="noopener noreferrer">{{ printf "%s/%s.svg" "/static/svg/" .Pre | readFile | safeHTML }}</a>
 		</li>
 		{{ end }}
 	</ul>
