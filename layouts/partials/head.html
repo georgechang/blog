@@ -4,7 +4,6 @@
 	window.dataLayer = window.dataLayer || [];
 	function gtag() { dataLayer.push(arguments); }
 	gtag('js', new Date());
-
 	gtag('config', 'UA-289264-6');
 </script>
 
@@ -23,9 +22,9 @@
 {{ partial "json-ld.html" . }}
 {{- end }}
 
-<script src="/sw.js"></script>
+<script async src="/sw.js"></script>
 {{ $css := resources.Get "css/tailwind.css" | resources.PostCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink }}">
+<link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="{{ $css.Permalink }}">
 {{ if (.Params.mermaid) }}
 <!-- MermaidJS support -->
 <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
