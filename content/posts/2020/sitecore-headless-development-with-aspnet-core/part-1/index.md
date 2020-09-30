@@ -21,4 +21,4 @@ Most likely! All the usual suspects for Sitecore still exist - field types, loca
 
 ## How do I get started?
 
-Great question! See Part 2 (when it's available) about how to get rolling with Sitecore and ASP.NET Core.
+Great question! See [Part 2]({{< ref "/posts/2020/sitecore-headless-development-with-aspnet-core/part-2" >}}) about how to get rolling with Sitecore and ASP.NET Core.
