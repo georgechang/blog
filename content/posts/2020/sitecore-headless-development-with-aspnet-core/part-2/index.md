@@ -18,6 +18,15 @@ Additionally, the Sitecore GitHub account provides an example Helix project that
 
 What if you're as crazy as I am and wanted to know how to set this up from scratch? What's needed to turn a regular ASP.NET Core MVC application to a Sitecore application with the Sitecore ASP.NET Core SDK? Let's find out!
 
+### Create a New ASP.NET Core Project
+
+Time to create our new blank ASP.NET Core project.
+
+1. Open a terminal window and set your current directory to where you want to create your project.
+2. Enter in `dotnet new mvc -n MyProjectName`
+3. ???
+4. PROFIT!
+
 ### Create API Key
 
 For starters, make sure you've installed the [Sitecore Headless Services](https://dev.sitecore.net/Downloads/Sitecore_Headless_Rendering/140/Sitecore_Headless_Rendering_1400.aspx) package in your Sitecore 10 instance.
