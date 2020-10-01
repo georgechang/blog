@@ -40,6 +40,7 @@ googleAnalytics = ""
   [markup.highlight]
     tabWidth = 2
     style = "native"
+    noClasses = false
 
   [markup.goldmark.renderer]
     unsafe = true

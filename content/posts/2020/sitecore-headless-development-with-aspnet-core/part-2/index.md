@@ -51,23 +51,21 @@ You'll want to add a `Sitecore` section to your `appsettings.json` file that con
 ```json
 {
   "Sitecore": {
-    // your Sitecore 10 host URL
     "InstanceUri": "https://sitecore10.com",
-    // the Sitecore site definition that you are rendering
     "DefaultSiteName": "mysite",
-    // the API key that you just created in the previous step
     "ApiKey": "7F3C0F40-37E6-4613-9304-DA7FBA4484E9",
-    // the URL of your rendering host (the .NET Core application)
     "RenderingHostUri": "https://localhost:5001",
-    // toggle for enabling Experience Editor.
-    // You'll want to set this as false in your production "content delivery" instances
     "EnableExperienceEditor": true
   },
-  "OtherConfigurations": {
-    ...
-  }
+  "OtherConfigurations": {}
 }
 ```
+
+- `InstanceUri`: your Sitecore 10 host URL
+- `DefaultSiteName`: the Sitecore site definition that you are rendering
+- `ApiKey`: the API key that you just created in the previous step
+- `RenderingHostUri`: the URL of your rendering host (the .NET Core application)
+- `EnableExperienceEditor`: toggle for enabling Experience Editor - this should be false in your production "content delivery" instances
 
 ### Map Configuration as an Object
 

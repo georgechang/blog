@@ -45,6 +45,19 @@
     @apply my-0;
   }
 
+  article.prose a {
+    @apply break-all;
+  }
+
+  article.prose h2 {
+    @apply mt-4;
+  }
+
+  article.prose code::before,
+  article.prose code::after {
+    content: "";
+  }
+
   article.prose blockquote p:first-of-type::before,
   article.prose blockquote p:first-of-type::after {
     content: "";
