@@ -14,7 +14,7 @@
     "autoprefixer": "^10.0.0"
   },
   "scripts": {
-    "build:azure": "npm install"
+    "build": "hugo --minify"
   },
   "author": "George Chang",
   "license": "MIT"
