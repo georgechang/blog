@@ -14,6 +14,9 @@ Sitecore provides a step-by-step walkthrough on using a provided "Getting Starte
 
 Additionally, the Sitecore GitHub account provides an example Helix project that uses the ASP.NET Core rendering host which you can clone and run yourself here: https://github.com/Sitecore/Helix.Examples/tree/master/examples/helix-basic-aspnetcore
 
+> If you want a great video about how all this works, check out [Robbert Hock](https://twitter.com/kayeeNL)'s post here that talks through how that is all set up:
+> https://www.kayee.nl/2020/09/29/sitecore-10-headless-development-with-asp-net-core-docker-containers-architecture-overview/
+
 ## Hard Mode
 
 What if you're as crazy as I am and wanted to know how to set this up from scratch? What's needed to turn a regular ASP.NET Core MVC application to a Sitecore application with the Sitecore ASP.NET Core SDK? Let's find out!
