@@ -1,5 +1,5 @@
 ---
-title: Sitecore, URL Rewirites, and the "Failed" JS Dialog
+title: Sitecore, URL Rewrites, and the "Failed" JS Dialog
 date: 2016-05-02
 categories:
   - Sitecore
