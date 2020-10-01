@@ -74,7 +74,7 @@ The .NET Core configuration library can do some neat stuff, one of which being a
 ```csharp
 public class SitecoreOptions
 {
-	public static readonly string Key = "Sitecore";
+  public static readonly string Key = "Sitecore";
 
 	public Uri InstanceUri { get; set; }
 	public string LayoutServicePath { get; set; } = "/sitecore/api/layout/render/jss";
@@ -292,5 +292,7 @@ Don't forget to add in the relevant NuGet packages that are required for the SDK
   </ItemGroup>
 </Project>
 ```
+
+To be perfectly honest, most all of this was stolen from the previously mentioned "Getting Started" kit. This just includes the important bits. 😉
 
 That should be it for setup! Now you're ready to create some components! (finally!)
