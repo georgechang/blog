@@ -23,10 +23,10 @@
 {{- end }}
 
 <script defer src="/sw.js"></script>
-{{ $css := resources.Get "css/tailwind.css" | postCSS | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink }}">
+{{ $tailwind := resources.Get "css/tailwind.css" | postCSS | minify | fingerprint }}
 {{ $syntax := resources.Get "css/syntax.css" | minify | fingerprint }}
-<link rel="stylesheet" href="{{ $syntax.Permalink }}">
+{{ $css := slice $tailwind $syntax | resources.Concat "css/gc.css" }}
+<link rel="stylesheet" href="{{ $css.Permalink }}">
 {{ if (.Params.mermaid) }}
 <!-- MermaidJS support -->
 <script defer src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>

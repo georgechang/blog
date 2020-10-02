@@ -1,14 +1,13 @@
 {{ define "main" -}}
-<section class="flex flex-col items-center">
-	<article class="prose mx-8 sm:mx-0 lg:prose-lg ">
+<section class="article">
+	<article class="prose lg:prose-lg article-body">
 		<header>
-			<h1 itemprop=" headline" class="text-center">{{ .Title }}</h1>
+			<h1 itemprop="headline" class="text-center">{{ .Title }}</h1>
 		</header>
-		<time itemprop="datePublished" datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }}
-			class="text-lg italic block text-center">
+		<time itemprop="datePublished" datetime={{ .Date.Format "2006-01-02T15:04:05Z0700" }} class="article-date">
 			{{ .Date.Format "Monday, January 2, 2006" }}
 		</time>
-		<section class="flex flex-col mb-16">
+		<section class="article-content">
 			{{ .Content }}
 		</section>
 	</article>
