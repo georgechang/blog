@@ -46,8 +46,6 @@ This contains the configuration values for the `Startup` class - it's a good ide
 
 You'll want to add a `Sitecore` section to your `appsettings.json` file that contains the Sitecore-related values. Here's what you want to put into the root JSON object of the configuration file.
 
-**(Don't just copy/paste this...JSON doesn't have comments so take those out. 😁)**
-
 ```json
 {
   "Sitecore": {
