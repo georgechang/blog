@@ -54,16 +54,13 @@
   .header {
     @apply flex flex-row justify-between bg-gradient-to-b from-white py-4 px-4 top-0 items-center;
   }
-  .header .title {
-    @apply mr-16;
-  }
 
-  .header .title h1 {
-    @apply whitespace-no-wrap;
-  }
-
-  .header .title .navigation {
+  .header .navigation {
     @apply flex flex-row items-center;
+  }
+
+  .header .navigation .title h1 {
+    @apply whitespace-no-wrap;
   }
 
   footer {
@@ -75,7 +72,7 @@
   }
 
   ul.social svg {
-    @apply w-8 fill-current text-gray-700;
+    @apply w-6 fill-current text-gray-700;
   }
 
   .pagination-block {
@@ -89,6 +86,7 @@
   li.page-item {
     @apply mx-4 text-xl;
   }
+
   li.page-item.active {
     @apply font-bold;
   }
@@ -129,6 +127,10 @@
 
     .jumbotron {
       @apply py-24;
+    }
+
+    ul.social svg {
+      @apply w-8;
     }
   }
 
