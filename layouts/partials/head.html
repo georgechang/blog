@@ -24,9 +24,7 @@
 
 <script defer src="/sw.js"></script>
 {{ $tailwind := resources.Get "css/tailwind.css" | postCSS | minify | fingerprint }}
-{{ $syntax := resources.Get "css/syntax.css" | minify | fingerprint }}
-{{ $css := slice $tailwind $syntax | resources.Concat "css/gc.css" }}
-<link rel="stylesheet" href="{{ $css.Permalink }}">
+<link rel="stylesheet" href="{{ $tailwind.Permalink }}">
 {{ if (.Params.mermaid) }}
 <!-- MermaidJS support -->
 <script defer src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>

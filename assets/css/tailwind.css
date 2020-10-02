@@ -78,33 +78,6 @@
     @apply w-8 fill-current text-gray-700;
   }
 
-  article.prose pre {
-    @apply my-0;
-    max-width: calc(100vw - 2rem);
-  }
-
-  article.prose ol {
-    @apply my-0;
-  }
-
-  article.prose a {
-    @apply break-all;
-  }
-
-  article.prose h2 {
-    @apply mt-4;
-  }
-
-  article.prose code::before,
-  article.prose code::after {
-    content: "";
-  }
-
-  article.prose blockquote p:first-of-type::before,
-  article.prose blockquote p:first-of-type::after {
-    content: "";
-  }
-
   .pagination-block {
     @apply flex flex-col items-center;
   }
