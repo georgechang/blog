@@ -14,6 +14,7 @@ module.exports = {
     typography: {
       default: {
         css : {
+          maxWidth: '72ch',
           pre: {
             marginTop: '0',
             marginBottom: '0',

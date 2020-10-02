@@ -40,7 +40,7 @@
     @apply flex flex-col items-center;
   }
   .article-body {
-    @apply mx-8;
+    @apply mx-8 my-8;
   }
 
   .article-date {
@@ -121,6 +121,10 @@
       @apply mx-0;
     }
 
+    .article-body {
+      @apply my-8;
+    }
+
     .article-list-item {
       @apply max-w-2/3;
     }
@@ -135,6 +139,10 @@
   }
 
   @screen md {
+    .article-body {
+      @apply my-16;
+    }
+
     .article-list-item {
       @apply max-w-1/2;
     }
@@ -143,6 +151,10 @@
   @screen lg {
     .header {
       @apply px-12 sticky;
+    }
+
+    .article-body {
+      @apply my-20;
     }
 
     .article-list-item {
