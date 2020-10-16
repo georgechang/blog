@@ -3,7 +3,6 @@ title: "Sitecore Headless Development with ASP.NET Core: Component Types"
 date: 2020-10-12
 categories:
   - Sitecore
-draft: true
 ---
 
 Finally! Components! About time!
