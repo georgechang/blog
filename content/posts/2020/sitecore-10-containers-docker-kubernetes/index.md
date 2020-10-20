@@ -3,7 +3,7 @@ title: Sitecore 10 - Containers with Docker and Kubernetes
 date: 2020-08-25
 categories:
   - Sitecore
-  - Cloud
+  - Azure
 ---
 
 [Sitecore 10.0](https://dev.sitecore.net/Downloads/Sitecore_Experience_Platform/100/Sitecore_Experience_Platform_100.aspx) made its way into the world a few weeks back and while it wasn't a dramatic user-facing major release, it was a huge release for Sitecore becoming more cloud-native and looking ahead to the future of the Sitecore development experience.
