@@ -52,7 +52,11 @@ module.exports = {
       maxWidth: {
         '1/3': '33%',
         '1/2': '50%',
-        '2/3': '66%'
+        '2/3': '66%',
+        'full-border': 'calc(100vw - 4rem)',
+        'full-border-sm': 'calc(100vw - 2rem)',
+        'full-border-lg': 'calc(100vw - 6rem)',
+        'full-text': '72ch'
       }
     },
   },

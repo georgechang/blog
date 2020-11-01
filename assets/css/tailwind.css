@@ -22,16 +22,19 @@
   a:hover {
     @apply underline;
   }
+
+  p code {
+    word-break: break-all;
+  }
 }
 
 @layer components {
   .mermaid {
-    @apply mb-8;
-    max-width: calc(100vw - 2rem);
+    @apply mb-8 max-w-full-border;
   }
 
   .mermaid svg {
-    @apply max-w-2xl;
+    max-width: calc(100vw - 4rem) !important;
     width: unset;
     height: unset;
   }
@@ -39,8 +42,9 @@
   .article {
     @apply flex flex-col items-center;
   }
+
   .article-body {
-    @apply mx-8 my-8;
+    @apply mx-8 my-8 max-w-full-border;
   }
 
   .article-date {
@@ -116,8 +120,7 @@
   }
 
   @screen sm {
-    .article-list,
-    .article-body {
+    .article-list {
       @apply mx-0;
     }
 
@@ -140,7 +143,7 @@
 
   @screen md {
     .article-body {
-      @apply my-16;
+      @apply mx-8 my-16 max-w-full-text;
     }
 
     .article-list-item {
