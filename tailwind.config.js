@@ -25,7 +25,7 @@ module.exports = {
             marginBottom: '0',
           },
           a: {
-              wordBreak: 'break-all'
+              wordBreak: 'break-word'
             },
           h2: {
             marginTop: '1rem'
