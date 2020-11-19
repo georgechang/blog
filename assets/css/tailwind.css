@@ -64,7 +64,7 @@
   }
 
   .header .navigation .title h1 {
-    @apply whitespace-no-wrap;
+    @apply whitespace-nowrap;
   }
 
   footer {
