@@ -68,7 +68,7 @@
   }
 
   footer {
-    @apply flex flex-row justify-between items-center h-32 bg-gray-500 p-12;
+    @apply flex flex-row justify-between items-center h-32 bg-gray-300 p-12;
   }
 
   ul.social {

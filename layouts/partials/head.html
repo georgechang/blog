@@ -17,11 +17,11 @@
 {{- else -}}
 <title>{{ .Title }} | {{ .Site.Title }}</title>
 {{- end }}
-<meta name="description" content="{{ if .IsHome }}{{ $.Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}" />
+<meta name="description"
+	content="{{ if .IsHome }}{{ $.Site.Params.Description }}{{ else }}{{ .Description }}{{ end }}" />
 
 {{ if .IsPage -}} {{ partial "json-ld.html" . }} {{- end }}
 
-<script defer src="/sw.js"></script>
 {{ $tailwind := resources.Get "css/tailwind.css" | postCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $tailwind.Permalink }}" />
 {{ if (.Params.mermaid) }}
