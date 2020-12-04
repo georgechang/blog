@@ -30,4 +30,6 @@ jobs:
       - name: Upload to Azure Storage
         run: |
           az storage blob upload-batch --account-name gcblog -s ./public -d '$web'
-          az cdn endpoint purge -g blog -n gcblog --profile-name gcblog-cdn
+      - name: Purge CDN
+        run: |
+          az cdn endpoint purge -g blog -n gcblog --profile-name gcblog-cdn --content-paths '/'
