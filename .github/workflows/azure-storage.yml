@@ -18,7 +18,7 @@ jobs:
       - name: Run npm install
         run: npm install
       - name: Run Hugo
-        run: hugo
+        run: hugo --minify
         env:
           NODE_ENV: production
       - name: Azure Login
