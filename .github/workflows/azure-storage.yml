@@ -19,6 +19,8 @@ jobs:
           submodules: true
       - name: Install Hugo
         run: sudo apt-get install hugo
+      - name: Run npm install
+        run: npm install
       - name: Run Hugo
         run: hugo
       - name: Azure Login
