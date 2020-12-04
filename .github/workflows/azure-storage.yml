@@ -1,0 +1,31 @@
+name: Azure Storage CI/CD
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build and Deploy
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Install Hugo
+        run: sudo apt-get install hugo
+      - name: Run Hugo
+        run: hugo --minify
+      - name: Azure Login
+        uses: Azure/login@v1.1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Upload to Azure Storage
+        run: |
+          az storage blob upload-batch --account-name gcblog -s ./public -d '$web'
+          az cdn endpoint purge -g blog -n gcblog --profile-name gcblog-cdn

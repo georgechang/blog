@@ -16,11 +16,7 @@
   }
 
   a {
-    @apply text-blue-900;
-  }
-
-  a:hover {
-    @apply underline;
+    @apply text-blue-900 border-b-2 border-dotted border-blue-900;
   }
 
   p code {
@@ -41,30 +37,31 @@
 
   .article {
     @apply flex flex-col items-center;
-  }
 
-  .article-body {
-    @apply mx-8 my-8 max-w-full-border;
-  }
+    .article-body {
+      @apply mx-8 my-8;
+    }
 
-  .article-date {
-    @apply text-lg italic block text-center;
-  }
+    .article-date {
+      @apply text-lg italic block text-center;
+    }
 
-  .article-content {
-    @apply flex flex-col mb-16;
+    .article-content {
+      @apply flex flex-col mb-16;
+    }
   }
 
   .header {
-    @apply flex flex-row justify-between bg-gradient-to-b from-white py-4 px-4 top-0 items-center;
-  }
+    @apply flex flex-row justify-between bg-gradient-to-t from-transparent via-white to-white py-4 px-4 top-0 items-center;
 
-  .header .navigation {
-    @apply flex flex-row items-center;
-  }
+    .title {
+      @apply font-semibold border-none;
+      font-variant: small-caps;
+    }
 
-  .header .navigation .title h1 {
-    @apply whitespace-nowrap;
+    .navigation {
+      @apply flex flex-row items-center;
+    }
   }
 
   footer {
@@ -83,19 +80,23 @@
     @apply flex flex-col items-center;
   }
 
-  ul.pagination {
+  .pagination-block ul.pagination {
     @apply flex flex-row my-8;
   }
 
-  li.page-item {
-    @apply mx-4 text-xl;
+  .pagination-block ul.pagination li.page-item {
+    @apply mx-4 px-4 text-xl rounded ring-1;
   }
 
-  li.page-item.active {
+  .pagination-block ul.pagination li.page-item .page-link {
+    @apply border-none;
+  }
+
+  .pagination-block ul.pagination li.page-item.active {
     @apply font-bold;
   }
 
-  li.page-item.disabled {
+  .pagination-block ul.pagination li.page-item.disabled {
     @apply text-gray-400;
   }
 
@@ -115,8 +116,20 @@
     @apply flex flex-col items-center mx-8 my-4;
   }
 
-  .article-list-item {
+  .article-list .article-list-item {
     @apply my-4 w-full;
+  }
+
+  .article-list .article-list-item .article-read-more {
+    @apply group;
+  }
+
+  .article-list .article-list-item .article-read-more .link {
+    @apply text-sm border-none;
+  }
+
+  .article-list .article-list-item .article-read-more .arrow {
+    @apply transform transition duration-500 ease-in-out group-hover:translate-x-4;
   }
 
   @screen sm {
