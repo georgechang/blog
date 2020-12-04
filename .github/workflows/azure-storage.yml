@@ -19,6 +19,8 @@ jobs:
         run: npm install
       - name: Run Hugo
         run: hugo
+        env:
+          NODE_ENV: production
       - name: Azure Login
         uses: Azure/login@v1.1
         with:

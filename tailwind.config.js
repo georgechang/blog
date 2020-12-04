@@ -1,10 +1,10 @@
 module.exports = {
-  // purge: {
-  //   content: ['./layouts/**/*.html'],
-  //   options: {
-  //     safelist: ['pagination', 'page-item', 'page-link', 'disabled', 'active'],
-  //   }
-  // },
+  purge: {
+    content: ['./layouts/**/*.html'],
+    options: {
+      safelist: ['pagination', 'page-item', 'page-link', 'disabled', 'active'],
+    }
+  },
   theme: {
     extend: {
       typography: {
