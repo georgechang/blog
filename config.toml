@@ -17,18 +17,6 @@ enableEmoji = true
   posts = "/posts/:year/:slug"
 
 [menu]
-  [[ menu.main ]]
-  identifier = "about"
-  name = "About"
-  url = "/about/"
-  weight = "100"
-
-  [[ menu.main ]]
-  identifier = "uses"
-  name = "Gear"
-  url = "/uses/"
-  weight = "300"
-
   [[ menu.social ]]
   identifier = "twitter"
   name = "Twitter"
