@@ -3,21 +3,22 @@
 		<a href="{{ .Site.Home.Permalink }}" title="Home" class="title">
 			<h1>George Chang</h1>
 		</a>
-		<!-- <ul class="flex flex-row mx-12">
-			{{ range .Site.Menus.main }}
-			<li class="mx-4">
-				<a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-			</li>
-			{{ end }}
-		</ul> -->
 	</nav>
 
-	<ul class="social space-x-6">
+	<ul class="flex flex-row mx-12">
+		{{ range .Site.Menus.main }}
+		<li class="mx-4">
+			<a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+		</li>
+		{{ end }}
+	</ul>
+
+	<!-- <ul class="social space-x-6">
 		{{ range .Site.Menus.social }}
 		<li>
 			<a href="{{ .URL }}" title="{{ .Title }}" target="_blank"
 				rel="noopener noreferrer">{{ printf "%s/%s.svg" "/static/svg/" .Pre | readFile | safeHTML }}</a>
 		</li>
 		{{ end }}
-	</ul>
+	</ul> -->
 </header>

@@ -21,7 +21,10 @@ module.exports = {
               marginBottom: '0',
             },
             a: {
-              wordBreak: 'break-word'
+              textDecoration: 'none',
+              wordBreak: 'break-word',
+              borderBottom: '2px',
+              borderStyle: 'dotted'
             },
             h2: {
               marginTop: '1rem'
@@ -54,6 +57,11 @@ module.exports = {
         'full-text': '72ch'
       }
     },
+  },
+  variants: {
+    extend: {
+      translate: ['group-hover']
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),

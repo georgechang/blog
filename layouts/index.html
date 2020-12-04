@@ -14,8 +14,8 @@
 		</time>
 		{{ .Summary }}
 		{{ if .Truncated }}
-		<div class="hover:uhover:underline">
-			<a href=" {{ .RelPermalink }}">Read More…</a>
+		<div class="article-read-more">
+			<a href=" {{ .RelPermalink }}" class="link">Read More <span class="arrow">🡒</span></a>
 		</div>
 		{{ end }}
 	</article>
