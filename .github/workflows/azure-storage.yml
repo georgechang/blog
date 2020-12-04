@@ -20,7 +20,7 @@ jobs:
       - name: Install Hugo
         run: sudo apt-get install hugo
       - name: Run Hugo
-        run: hugo --minify
+        run: hugo
       - name: Azure Login
         uses: Azure/login@v1.1
         with:
