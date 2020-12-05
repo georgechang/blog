@@ -1,6 +1,7 @@
 name: Azure Storage CI/CD
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -25,4 +26,4 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Upload to Azure Storage
         run: |
-          az storage blob upload-batch --account-name gcblog -s ./public -d '$web'
+          az storage blob upload-batch --account-name ${{ secrets.AZURE_ACCOUNT_NAME }} -s ./public -d '$web'
