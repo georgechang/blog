@@ -11,8 +11,6 @@ jobs:
     name: Build and Deploy
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: true
       - name: Install Hugo
         run: brew install hugo
       - name: Run npm install

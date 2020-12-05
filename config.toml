@@ -6,7 +6,7 @@ enableEmoji = true
 
 [params]
   description = "A blog about code, cloud, and other things that might start with the letter c"
-  googleAnalytics = "UA-289264-6"
+  googleTagManager = "GTM-TTJ7D9J"
 
 [author]
   givenName = "George"

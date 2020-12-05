@@ -1,15 +1,14 @@
 <meta charset="UTF-8">
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-289264-6"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag() {
-		dataLayer.push(arguments);
-	}
-	gtag("js", new Date());
-	gtag("config", "{{ $.Site.Params.GoogleAnalytics }}");
-</script>
+<script nonce='h8eNemzWevuIBKu0l4nH'>(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+				new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl; var n = d.querySelector('[nonce]');
+		n && j.setAttribute('nonce', n.nonce || n.getAttribute('nonce')); f.parentNode.insertBefore(j, f);
+	})(window, document, 'script', 'dataLayer', '{{ $.Site.Params.GoogleTagManager }}');</script>
 
-<!-- Enable responsiveness on mobile devices-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 {{ if .IsHome -}}
