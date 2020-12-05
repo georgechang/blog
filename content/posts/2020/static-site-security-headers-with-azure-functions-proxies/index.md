@@ -3,6 +3,7 @@ title: Static Site Security Headers with Azure Functions Proxies
 date: 2020-12-05
 categories:
   - Azure
+draft: true
 ---
 
 If you haven't been paying attention in the internet world in the past year or so, **static site generation** (a.k.a. SSG) is the new hotness!
