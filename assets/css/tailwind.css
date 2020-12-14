@@ -37,31 +37,31 @@
 
   .article {
     @apply flex flex-col items-center;
+  }
 
-    .article-body {
-      @apply mx-8 my-8;
-    }
+  .article .article-date {
+    @apply text-lg italic block text-center;
+  }
 
-    .article-date {
-      @apply text-lg italic block text-center;
-    }
+  .article .article-body {
+    @apply mx-8 my-8;
+  }
 
-    .article-content {
-      @apply flex flex-col mb-16;
-    }
+  .article .article-content {
+    @apply flex flex-col mb-16;
   }
 
   .header {
     @apply flex flex-row justify-between bg-gradient-to-t from-transparent via-white to-white py-4 px-4 top-0 items-center;
+  }
 
-    .title {
-      @apply font-semibold border-none;
-      font-variant: small-caps;
-    }
+  .header .title {
+    @apply font-semibold border-none;
+    font-variant: small-caps;
+  }
 
-    .navigation {
-      @apply flex flex-row items-center;
-    }
+  .header .navigation {
+    @apply flex flex-row items-center;
   }
 
   footer {
