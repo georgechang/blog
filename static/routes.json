@@ -1,0 +1,13 @@
+{
+	"routes": [],
+	"defaultHeaders": {
+		"content-security-policy": "default-src 'self'; script-src 'self' 'nonce-h8eNemzWevuIBKu0l4nH'; connect-src 'self' https://www.google-analytics.com/",
+		"referrer-policy": "no-referrer",
+		"strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+		"x-xss-protection": "1; mode=block",
+		"x-frame-options": "SAMEORIGIN",
+		"x-content-type-options": "nosniff",
+		"permissions-policy": "geolocation=()",
+		"cache-control": "must-revalidate, max-age=6000"
+	}
+}
