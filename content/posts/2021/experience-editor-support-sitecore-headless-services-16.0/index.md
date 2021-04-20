@@ -87,4 +87,4 @@ You'll notice that the hostname for the endpoint URL and the application URL cou
 
 ## That makes sense...I think. Thanks George!
 
-<iframe src="https://giphy.com/embed/gKmwTEH4vyd2M" width="433" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+![Anna Kendrick giving you a salute](img/anna.webp)
