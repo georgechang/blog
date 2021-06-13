@@ -1,0 +1,86 @@
+==================================================================
+https://keybase.io/georgechang
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://georgechang.io
+  * I am georgechang (https://keybase.io/georgechang) on keybase.
+  * I have a public key with fingerprint E528 9815 8B44 AF18 3A99  32FF 4E9A 3B75 34AA 2A34
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d826943eab944fe2871769f5c1b408c12c896459295adde5269fc29758c5d0280a",
+      "fingerprint": "e52898158b44af183a9932ff4e9a3b7534aa2a34",
+      "host": "keybase.io",
+      "key_id": "4e9a3b7534aa2a34",
+      "kid": "01019d1199118e176f08e50110b40bd3e249947adafc3c54bce4c1610c28e89d122c0a",
+      "uid": "68d0fad4199cfdcc63e77918c9e97519",
+      "username": "georgechang"
+    },
+    "merkle_root": {
+      "ctime": 1623615208,
+      "hash_meta": "362ff559ddb26ead986dd67cde07d1f68481cbfdffb6ba337c96ee48a85fa292",
+      "seqno": 20174928
+    },
+    "revoke": {
+      "sig_ids": [
+        "a95e42c786041ead47899902a797ae2486fb37803d523ad2d442bbc468dd39ed0f"
+      ]
+    },
+    "service": {
+      "hostname": "georgechang.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1623615268,
+  "expire_in": 157680000,
+  "prev": "6ff8bf67631944b6258d24fcd0bb3231c03e22d1b7bfd4b7e7287022bbde5a8c",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFtk3tQFVUcxy8PnUQ0q0EtpYZN85HlnrOvc66vnPDRQ7REkRDvPXvO2csVuBf2
+LoghKqKhNmrm+MBXNOOkU46OD9QUHZocURkJSRkfKU5KRBZaiaLm0LmU00y1/+zs
+2e/v9/v+Pr/f+ahHlCsmImnjiDz186FqRE2L6fKe8CUWSmaQzZXchVIm73zxLMZD
+jifTzyS3JAMoMwR1rCqcmFhVLQ6RAQwdWxoFpiojCiBFWFc1DLFGGOOaUFsUYkND
+VGMyRDKRhkmWP+Djdo7tDzgirRAhjICGTFUlFkAKwViBlqVyTBTT0BSVEEgUVQRm
+BEPhCGHOJCH+qj8ozsSHp9Pe/+gf+5YBZgBgDADiwq8lI67JAMjCs8kUDlWMVYMw
+YlGFaqpJuUqBDmQKEUciEkLa6TuvM52OmGwRpop81GKU6go3DAwQxVz0CXBYGOJ2
+gGRzofbxoO3jNIMEfFLRMCmb25lZ3GMHg06YL3X8YRXQoaIDDcpI9EhCGZ5s7hAR
+rOiCg6Zhxkyoc8Iw0hnTDcq4bDBg6UhFgJoWsyxTN4miGBTrnKuIIM0iEENhJcRz
+A0HJDWVgqBgiYcHm+cFMHq4e8vsEupDkTpOqigjWuAqpgXRZBaKWaiCMsQyJgQ0i
+ECHdMhUDyQrToEIYZKoKTZOqAgdTMBdMpPSicD07308704en9V8Kf00txw46QRrM
+Ev8yHCcn5A7DcebmhMVzuOn5O43H9AeY2BYRkc/tkD8YELCE8l/cdMGNF+T4be7x
+hxWaoSNZPOE6PD88M8tCpqUbugLE3po61BCDqkWZbJoKVACVxRZABkxD0FRNgxti
+s2UoGhQ7TBD9BySAwifxiZyCXoA4eTaXimKWRSrRrogYV3zvhOimwRviPkzc3ddd
+Bjse37AukeHr5Yrp1uvxie3t5VryziW/a02Xg3uO1l75uTq3PbUtOWH7pkMT+bM1
+U/rymwO/bNgQvXX+trEvDvUfSy7fvnVw4gvfF+w8+qane3V5cVT9luKfaLfyz67e
+urrC7dIO3Zk9ZMfU19PTKu4tP9u6IbdZibnY1hFVSXambJtU/uOsspPpa3u+8ujW
+c8naUvLkucXf1Rpz77bd35dV2hIZPfLalpkHL1wqj+/9yeUlKYejHo47fjI+Y8eN
++hktpSOaGr1fHBm/8tsDHwyouV23IBToX5e6+/f1k9ddPDtj9NbK6I663Vd2TS/x
+LfrqqeQuSYv0m32Sr40ORLQnlYzKqDsTt//IyBnxT+wE709Lut/TvFuwcsiCI7WL
+gvKv51FsXtMzxcXeiqr3Bq291Xq5YF3KnuFrT290akomw0Jv7G8LJ7fmj49u/njH
+efvG4NUPI5bNq0isen7vmLTVL8neCue1Hx7QyDMvH5vtbH53+R+wKTd2VWzzKa87
+ZdbSU291bQ9FNdxvLunTQUrzik9UT2hur2m/03AqTTt3ffGE1j6g/tKj7nubV04a
+k5QwcM/CMs21oq3swcR7TyekpV7cbGr7vMPvRTfaZ+ccbtnf/drCSYOm3a5MLzkQ
+4Tldb886/42cWrOq41jc1bbsysL+XVNnOne6lsd9OiBn+tDY6spd46W8cQ2J86/P
+Oz6lR92Ft9enfV011ldb4un3yyan+I1RcWum9mvc1/gn
+=6158
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/georgechang
+
+==================================================================
